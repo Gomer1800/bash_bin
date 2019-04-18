@@ -14,6 +14,6 @@ else
       NAME="$_test"
       NAME=${NAME%.in}
       NAME=${NAME#"$TESTS"}
-      "$REMOTE" < "$_test" > "$OUTPUT"/"$NAME""$3"
+      "$REMOTE" < "$_test" > "$OUTPUT"/"$NAME""$3" 2>"$OUTPUT"/"$NAME".err
    done
 fi

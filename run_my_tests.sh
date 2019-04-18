@@ -13,6 +13,6 @@ else
       NAME="$_test"
       NAME=${NAME%.in}
       NAME=${NAME#"$TESTS"}
-      ./a.out < "$_test" > "$OUTPUT"/"$NAME""$3"
+      ./a.out < "$_test" > "$OUTPUT"/"$NAME""$3" 2> "$OUTPUT"/"$NAME".err
    done
 fi
